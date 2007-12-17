@@ -6,7 +6,6 @@ Group: 		Monitoring
 Url:		http://jnettop.kubs.info/
 License: 	GPL
 Source: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
-Buildroot: 	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	libncurses-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	libglib2-devel
