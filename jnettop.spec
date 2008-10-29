@@ -1,12 +1,12 @@
 Summary: 	Network traffic tracker
 Name: 		jnettop
 Version:	0.13.0
-Release:	%mkrel 6
+Release:	%mkrel 7
 Group: 		Monitoring
 Url:		http://jnettop.kubs.info/
 License: 	GPL
 Source: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
-Buildroot: 	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libncurses-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	libglib2-devel
