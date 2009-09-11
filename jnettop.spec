@@ -1,7 +1,7 @@
 Summary: 	Network traffic tracker
 Name: 		jnettop
 Version:	0.13.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group: 		Monitoring
 Url:		http://jnettop.kubs.info/
 License: 	GPL
