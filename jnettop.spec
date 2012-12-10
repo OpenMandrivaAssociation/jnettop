@@ -4,10 +4,9 @@ Version:	0.13.0
 Release:	%mkrel 9
 Group: 		Monitoring
 Url:		http://jnettop.kubs.info/
-License: 	GPL
-Source: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libncurses-devel
+License: 	GPLv2
+Source0: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
+BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	libpcap-devel
 BuildRequires:	libglib2-devel
 
@@ -25,17 +24,10 @@ outbound router.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -r $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README .jnettop
 %{_bindir}/jnettop
 %{_prefix}/share/%{name}/*
 %_mandir/man8/jnettop.*
-
-
