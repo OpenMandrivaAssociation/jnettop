@@ -7,7 +7,7 @@ Url:		http://jnettop.kubs.info/
 License: 	GPLv2
 Source0: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncurses)
-BuildRequires:	libpcap-devel
+BuildRequires:	pcap-devel = 1.3.0-2
 BuildRequires:	libglib2-devel
 
 %description
