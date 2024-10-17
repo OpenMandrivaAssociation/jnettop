@@ -3,7 +3,7 @@ Name: 		jnettop
 Version:	0.13.0
 Release:	11
 Group: 		Monitoring
-Url:		http://jnettop.kubs.info/
+Url:		https://jnettop.kubs.info/
 License: 	GPLv2
 Source0: 	http://jnettop.kubs.info/dist/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncurses)
